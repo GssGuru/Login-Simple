@@ -26,7 +26,7 @@ import okhttp3.Response;
 public class LoginActivity extends AppCompatActivity {
 
     private final MediaType REQWEST_HEADERS = MediaType.get("application/json; charset=utf-8");
-    private final String URL = "https://business-friends.biz/api?key=1234&method=posts.get&id=1234";
+    private final String URL = "https://gss.guru/api";
 
     private OkHttpClient client = new OkHttpClient();
     private UserLoginTask mAuthTask = null;
@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
         if (cancel) {
             focusView.requestFocus();
         } else {
-            showLoadingDialog(true, mProgressView, mLoginFormView);
+            showLoadingDialog(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
         }
@@ -106,7 +106,7 @@ public class LoginActivity extends AppCompatActivity {
         return password.length() > 4;
     }
 
-    private void showLoadingDialog(final boolean show, View progressView, View contentView) {
+    private void showLoadingDialog(final boolean show) {
         int shortAnimTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
         mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
         mLoginFormView.animate().setDuration(shortAnimTime).alpha(show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
@@ -125,10 +125,6 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Represents an asynchronous login/registration task used to authenticate
-     * the user.
-     */
     public class UserLoginTask extends AsyncTask<Void, Void, String> {
 
         private final String mEmail;
@@ -193,7 +189,7 @@ public class LoginActivity extends AppCompatActivity {
 
         private void closeTask(){
             mAuthTask = null;
-            showLoadingDialog(false, mProgressView, mLoginFormView);
+            showLoadingDialog(false);
         }
     }
 }
