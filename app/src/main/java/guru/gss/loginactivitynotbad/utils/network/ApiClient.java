@@ -1,4 +1,4 @@
-package guru.gss.loginactivitysimple.utils.network;
+package guru.gss.loginactivitynotbad.utils.network;
 
 import okhttp3.Response;
 import retrofit2.Call;

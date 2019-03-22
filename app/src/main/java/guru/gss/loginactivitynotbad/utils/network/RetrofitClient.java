@@ -1,7 +1,8 @@
-package guru.gss.loginactivitysimple.utils.network;
+package guru.gss.loginactivitynotbad.utils.network;
 
 import java.util.concurrent.TimeUnit;
 
+import guru.gss.loginactivitynotbad.Const;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -9,13 +10,12 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class RetrofitClient {
 
-    private static final String BASE_URL = "https://gss.guru/";
     private static final int RESPONSE_TIMEOUT = 120;
     private static RetrofitClient instance = null;
     private ApiClient apiClient;
 
     private RetrofitClient() {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(Const.BASE_URL)
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(initHttpClient())

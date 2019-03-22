@@ -1,4 +1,4 @@
-package guru.gss.loginactivitysimple;
+package guru.gss.loginactivitynotbad;
 
 public class Const {
 

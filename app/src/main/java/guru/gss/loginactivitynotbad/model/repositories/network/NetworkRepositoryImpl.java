@@ -1,7 +1,7 @@
-package guru.gss.loginactivitysimple.model.repositories.network;
+package guru.gss.loginactivitynotbad.model.repositories.network;
 
-import guru.gss.loginactivitysimple.model.interactors.user.UserAuthorizationListener;
-import guru.gss.loginactivitysimple.utils.network.RetrofitClient;
+import guru.gss.loginactivitynotbad.model.interactors.user.UserAuthorizationListener;
+import guru.gss.loginactivitynotbad.utils.network.RetrofitClient;
 import okhttp3.Response;
 import retrofit2.Call;
 import retrofit2.Callback;

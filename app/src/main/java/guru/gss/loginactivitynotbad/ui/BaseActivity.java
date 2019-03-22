@@ -1,15 +1,14 @@
-package guru.gss.loginactivitysimple.ui;
+package guru.gss.loginactivitynotbad.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
 import com.arellomobile.mvp.MvpAppCompatActivity;
 
-import guru.gss.loginactivitysimple.R;
+import guru.gss.loginactivitynotbad.R;
 
 public class BaseActivity extends MvpAppCompatActivity {
 

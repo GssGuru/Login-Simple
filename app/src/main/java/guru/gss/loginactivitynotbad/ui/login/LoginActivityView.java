@@ -1,4 +1,4 @@
-package guru.gss.loginactivitysimple.ui.login;
+package guru.gss.loginactivitynotbad.ui.login;
 
 import com.arellomobile.mvp.MvpView;
 

@@ -1,14 +1,10 @@
-package guru.gss.loginactivitysimple.model.interactors.user;
+package guru.gss.loginactivitynotbad.model.interactors.user;
 
 
-import guru.gss.loginactivitysimple.model.interactors.Interactor;
-import guru.gss.loginactivitysimple.model.repositories.network.NetworkRepository;
-import guru.gss.loginactivitysimple.model.repositories.preference.PreferenceRepository;
-import guru.gss.loginactivitysimple.model.repositories.preference.PreferenceRepositoryImpl;
-import guru.gss.loginactivitysimple.utils.network.RetrofitClient;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import guru.gss.loginactivitynotbad.model.interactors.Interactor;
+import guru.gss.loginactivitynotbad.model.repositories.network.NetworkRepository;
+import guru.gss.loginactivitynotbad.model.repositories.preference.PreferenceRepository;
+import guru.gss.loginactivitynotbad.model.repositories.preference.PreferenceRepositoryImpl;
 
 public class UserInteractor implements Interactor.InteractorUser {
 

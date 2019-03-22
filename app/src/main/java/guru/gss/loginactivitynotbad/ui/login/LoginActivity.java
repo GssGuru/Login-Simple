@@ -1,4 +1,4 @@
-package guru.gss.loginactivitysimple.ui.login;
+package guru.gss.loginactivitynotbad.ui.login;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,11 +11,11 @@ import com.arellomobile.mvp.presenter.ProvidePresenter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import guru.gss.loginactivitysimple.R;
-import guru.gss.loginactivitysimple.model.interactors.user.UserInteractor;
-import guru.gss.loginactivitysimple.model.repositories.network.NetworkRepositoryImpl;
-import guru.gss.loginactivitysimple.model.repositories.preference.PreferenceRepositoryImpl;
-import guru.gss.loginactivitysimple.ui.BaseActivity;
+import guru.gss.loginactivitynotbad.R;
+import guru.gss.loginactivitynotbad.model.interactors.user.UserInteractor;
+import guru.gss.loginactivitynotbad.model.repositories.network.NetworkRepositoryImpl;
+import guru.gss.loginactivitynotbad.model.repositories.preference.PreferenceRepositoryImpl;
+import guru.gss.loginactivitynotbad.ui.BaseActivity;
 
 public class LoginActivity extends BaseActivity implements LoginActivityView {
 

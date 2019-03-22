@@ -1,9 +1,9 @@
-package guru.gss.loginactivitysimple.model.repositories.preference;
+package guru.gss.loginactivitynotbad.model.repositories.preference;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import guru.gss.loginactivitysimple.MyApp;
+import guru.gss.loginactivitynotbad.MyApp;
 
 public class PreferenceRepositoryImpl implements PreferenceRepository {
 

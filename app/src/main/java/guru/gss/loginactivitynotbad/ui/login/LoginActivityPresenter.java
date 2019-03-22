@@ -1,10 +1,10 @@
-package guru.gss.loginactivitysimple.ui.login;
+package guru.gss.loginactivitynotbad.ui.login;
 
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
 
-import guru.gss.loginactivitysimple.model.interactors.Interactor;
-import guru.gss.loginactivitysimple.model.interactors.user.UserAuthorizationListener;
+import guru.gss.loginactivitynotbad.model.interactors.Interactor;
+import guru.gss.loginactivitynotbad.model.interactors.user.UserAuthorizationListener;
 
 @InjectViewState
 public class LoginActivityPresenter extends MvpPresenter<LoginActivityView> {
