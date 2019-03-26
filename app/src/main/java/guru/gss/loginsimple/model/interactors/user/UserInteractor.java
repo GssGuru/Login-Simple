@@ -1,10 +1,10 @@
-package guru.gss.loginactivitynotbad.model.interactors.user;
+package guru.gss.loginsimple.model.interactors.user;
 
 
-import guru.gss.loginactivitynotbad.model.interactors.Interactor;
-import guru.gss.loginactivitynotbad.model.repositories.network.NetworkRepository;
-import guru.gss.loginactivitynotbad.model.repositories.preference.PreferenceRepository;
-import guru.gss.loginactivitynotbad.model.repositories.preference.PreferenceRepositoryImpl;
+import guru.gss.loginsimple.model.interactors.Interactor;
+import guru.gss.loginsimple.model.repositories.network.NetworkRepository;
+import guru.gss.loginsimple.model.repositories.preference.PreferenceRepository;
+import guru.gss.loginsimple.model.repositories.preference.PreferenceRepositoryImpl;
 
 public class UserInteractor implements Interactor.InteractorUser {
 

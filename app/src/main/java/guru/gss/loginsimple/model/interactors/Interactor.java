@@ -1,6 +1,6 @@
-package guru.gss.loginactivitynotbad.model.interactors;
+package guru.gss.loginsimple.model.interactors;
 
-import guru.gss.loginactivitynotbad.model.interactors.user.UserAuthorizationListener;
+import guru.gss.loginsimple.model.interactors.user.UserAuthorizationListener;
 
 public interface Interactor {
 

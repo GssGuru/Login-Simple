@@ -1,4 +1,4 @@
-package guru.gss.loginactivitynotbad.model.repositories.preference;
+package guru.gss.loginsimple.model.repositories.preference;
 
 import android.content.SharedPreferences;
 

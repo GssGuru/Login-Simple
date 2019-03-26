@@ -1,4 +1,4 @@
-package guru.gss.loginactivitynotbad;
+package guru.gss.loginsimple;
 
 import android.app.Application;
 import android.content.Context;

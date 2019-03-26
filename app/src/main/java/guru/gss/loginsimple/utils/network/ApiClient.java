@@ -1,4 +1,4 @@
-package guru.gss.loginactivitynotbad.utils.network;
+package guru.gss.loginsimple.utils.network;
 
 import okhttp3.Response;
 import retrofit2.Call;
@@ -10,6 +10,6 @@ import retrofit2.http.POST;
 public interface ApiClient {
 
     @Headers({"Content-Type: application/json"})
-    @POST("api/authorization")
+    @POST("authorization")
     Call<Response> authorization(@Header("Authorization") String contentRange, @Body String data);
 }

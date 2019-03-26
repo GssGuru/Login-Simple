@@ -1,4 +1,4 @@
-package guru.gss.loginactivitynotbad.model.interactors.user;
+package guru.gss.loginsimple.model.interactors.user;
 
 public interface UserAuthorizationListener {
 

@@ -1,8 +1,8 @@
-package guru.gss.loginactivitynotbad.utils.network;
+package guru.gss.loginsimple.utils.network;
 
 import java.util.concurrent.TimeUnit;
 
-import guru.gss.loginactivitynotbad.Const;
+import guru.gss.loginsimple.Const;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

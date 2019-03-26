@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginActivitySimple</string>
+    <string name="app_name">LoginSimple</string>
 
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

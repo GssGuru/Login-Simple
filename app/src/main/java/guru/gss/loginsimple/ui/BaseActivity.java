@@ -1,4 +1,4 @@
-package guru.gss.loginactivitynotbad.ui;
+package guru.gss.loginsimple.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 import com.arellomobile.mvp.MvpAppCompatActivity;
 
-import guru.gss.loginactivitynotbad.R;
+import guru.gss.loginsimple.R;
 
 public class BaseActivity extends MvpAppCompatActivity {
 
