@@ -28,7 +28,5 @@ public class LoginActivityPresenter extends MvpPresenter<LoginActivityView> {
                 getViewState().hideProgressDialog();
             }
         });
-
     }
-
 }

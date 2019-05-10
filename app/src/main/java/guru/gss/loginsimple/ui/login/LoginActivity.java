@@ -16,6 +16,9 @@ import guru.gss.loginsimple.model.interactors.user.UserInteractor;
 import guru.gss.loginsimple.model.repositories.network.NetworkRepositoryImpl;
 import guru.gss.loginsimple.model.repositories.preference.PreferenceRepositoryImpl;
 import guru.gss.loginsimple.ui.BaseActivity;
+import guru.gss.loginsimple.ui.utils.utils.ContentAnimator;
+import guru.gss.loginsimple.ui.utils.utils.EmailPasswdValidation;
+import guru.gss.loginsimple.ui.utils.utils.ToastUtils;
 
 public class LoginActivity extends BaseActivity implements LoginActivityView {
 
@@ -45,30 +48,30 @@ public class LoginActivity extends BaseActivity implements LoginActivityView {
 
     @OnClick(R.id.email_sign_in_button)
     void email_sign_in_button() {
-        if (logIn(mEmailView, mPasswordView)) {
+        if (logIn(new EmailPasswdValidation(), this, mEmailView, mPasswordView)) {
             presenter.autorization(mEmailView.getText().toString(), mPasswordView.getText().toString());
         }
     }
 
     @Override
     public void successAuthorization() {
-        Toast.makeText(this, getResources().getString(R.string.login_success), Toast.LENGTH_LONG).show();
-        showLoadingDialog(false, mLoginFormView, mProgressView);
+        showToast(new ToastUtils(), this,  getResources().getString(R.string.login_success));
+        changeContent(new ContentAnimator(), false, mLoginFormView, mProgressView);
     }
 
     @Override
     public void failedAuthorization() {
-        Toast.makeText(this, getResources().getString(R.string.login_error), Toast.LENGTH_LONG).show();
-        showLoadingDialog(false, mLoginFormView, mProgressView);
+        showToast(new ToastUtils(), this,  getResources().getString(R.string.login_error));
+        changeContent(new ContentAnimator(), false, mLoginFormView, mProgressView);
     }
 
     @Override
     public void showProgressDialog() {
-        showLoadingDialog(true, mLoginFormView, mProgressView);
+        changeContent(new ContentAnimator(), true, mLoginFormView, mProgressView);
     }
 
     @Override
     public void hideProgressDialog() {
-        showLoadingDialog(false, mLoginFormView, mProgressView);
+        changeContent(new ContentAnimator(), false, mLoginFormView, mProgressView);
     }
 }

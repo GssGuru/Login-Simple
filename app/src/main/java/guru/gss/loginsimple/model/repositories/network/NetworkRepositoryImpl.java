@@ -11,10 +11,10 @@ public class NetworkRepositoryImpl implements NetworkRepository {
     @Override
     public void authorization(String email, String passwd, final UserAuthorizationListener listener) {
         String content = email + passwd;
-        Call<Response> call = RetrofitClient.getInstance().getApiClient().authorization("some headers", content);
-        call.enqueue(new Callback<Response>() {
+        Call<String> call = RetrofitClient.getInstance().getApiClient().authorization("some headers", content);
+        call.enqueue(new Callback<String>() {
             @Override
-            public void onResponse(Call<okhttp3.Response> call, retrofit2.Response<Response> response) {
+            public void onResponse(Call<String> call, retrofit2.Response<String> response) {
                 if (response.isSuccessful()) {
                     if (listener != null) {
                         listener.isAuthorizationSuccess(true);
@@ -27,7 +27,7 @@ public class NetworkRepositoryImpl implements NetworkRepository {
             }
 
             @Override
-            public void onFailure(Call<okhttp3.Response> call, Throwable t) {
+            public void onFailure(Call<String> call, Throwable t) {
                 if (listener != null){
                     listener.isAuthorizationSuccess(false);
                 }

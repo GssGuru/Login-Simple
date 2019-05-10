@@ -11,5 +11,5 @@ public interface ApiClient {
 
     @Headers({"Content-Type: application/json"})
     @POST("authorization")
-    Call<Response> authorization(@Header("Authorization") String contentRange, @Body String data);
+    Call<String> authorization(@Header("Authorization") String contentRange, @Body String data);
 }
