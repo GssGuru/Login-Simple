@@ -1,5 +1,6 @@
 package guru.gss.loginsimple.model.repositories.preference;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
@@ -11,8 +12,8 @@ public class PreferenceRepositoryImpl implements PreferenceRepository {
 
     private final SharedPreferences mPref;
 
-    public PreferenceRepositoryImpl() {
-        mPref = PreferenceManager.getDefaultSharedPreferences(MyApp.getContext());
+    public PreferenceRepositoryImpl(Context context) {
+        mPref = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
     /**

@@ -24,7 +24,7 @@ public class LoginActivity extends BaseActivity implements LoginActivityView {
 
     @ProvidePresenter
     LoginActivityPresenter providePresenter() {
-        return new LoginActivityPresenter(new UserInteractor(new NetworkRepositoryImpl(), new PreferenceRepositoryImpl()));
+        return new LoginActivityPresenter(new UserInteractor(new NetworkRepositoryImpl(), new PreferenceRepositoryImpl(this)));
     }
 
     @BindView(R.id.email)
@@ -52,13 +52,13 @@ public class LoginActivity extends BaseActivity implements LoginActivityView {
 
     @Override
     public void successAuthorization() {
-        Toast.makeText(this, "DONE", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getResources().getString(R.string.login_success), Toast.LENGTH_LONG).show();
         showLoadingDialog(false, mLoginFormView, mProgressView);
     }
 
     @Override
     public void failedAuthorization() {
-        Toast.makeText(this, "FAIL", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getResources().getString(R.string.login_error), Toast.LENGTH_LONG).show();
         showLoadingDialog(false, mLoginFormView, mProgressView);
     }
 

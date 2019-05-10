@@ -41,9 +41,9 @@ public class RetrofitClient {
         return okHttpBuilder.build();
     }
 
-    public static void recreateRetrofit() {
-        instance = null;
-    }
+//    public static void recreateRetrofit() {
+//        instance = null;
+//    }
 
     public ApiClient getApiClient() {
         return apiClient;

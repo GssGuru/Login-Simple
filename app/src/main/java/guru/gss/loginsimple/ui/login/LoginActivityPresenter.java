@@ -15,18 +15,19 @@ public class LoginActivityPresenter extends MvpPresenter<LoginActivityView> {
         this.interactorUser = interactorUser;
     }
 
-    public void autorization(String email, String password){
-       interactorUser.authorization(email, password, new UserAuthorizationListener() {
-
-           @Override
-           public void isAuthorizationSuccess(boolean isSuccess) {
-               if (isSuccess){
-                   getViewState().successAuthorization();
-               } else {
-                   getViewState().failedAuthorization();
-               }
-           }
-       });
+    public void autorization(String email, String password) {
+        getViewState().showProgressDialog();
+        interactorUser.authorization(email, password, new UserAuthorizationListener() {
+            @Override
+            public void isAuthorizationSuccess(boolean isSuccess) {
+                if (isSuccess) {
+                    getViewState().successAuthorization();
+                } else {
+                    getViewState().failedAuthorization();
+                }
+                getViewState().hideProgressDialog();
+            }
+        });
 
     }
 

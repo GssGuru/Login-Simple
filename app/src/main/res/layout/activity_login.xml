@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@color/colorWhite"
     tools:context=".ui.login.LoginActivity">
 
     <ProgressBar
@@ -21,27 +22,27 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:layout_gravity="center"
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
 
             <ImageView
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
 
             <TextView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/login_screen_for_beginner"/>
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/login_screen_for_beginner" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
