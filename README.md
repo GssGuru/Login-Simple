@@ -1,20 +1,11 @@
-# Login Page
-Simple example login page with 1 Button, 2 EditText and internet reqwest
-
-# About the aplication
- - Simple example client-server aplication
- - Work with restful api
- - Saving data to work offline
+# About the application
+Simple example login page with 1 Button, 2 EditText and internet request. 
+We take the data from the input fields and when you click on the button, send a request to the server and wait for an answer
 
 # Preview
-
 ![](http://media.giphy.com/media/5b9xDSw5DBiGBGwRak/giphy.gif) ![](http://media.giphy.com/media/4VXZfmSXGJAiC3wsZb/giphy.gif)
 
-
-
-
-
-# Solution
+# Code
 <details><summary>Open</summary>
 <p>	
  
