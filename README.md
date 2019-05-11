@@ -1,5 +1,5 @@
 # Login Page
-about
+Simple example login page with 1 Button, 2 EditText and internet reqwest
 
 # About the aplication
  - Simple example client-server aplication
