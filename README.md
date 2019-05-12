@@ -4,7 +4,7 @@ We take the data from the input fields and when you click on the button, send a 
 
 # About the aplication
  - MVP(Moxy)
- - REST(Retrofit)
+ - REST(Retrofit2)
  - ButterKnife
 
 # Preview
