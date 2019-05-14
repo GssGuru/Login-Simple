@@ -16,13 +16,13 @@ Description of the application code
 <p>
 
 ## Manifest
-In the [`Manifest`](https://github.com/GssGuru/Login-Beginner/blob/master/app/src/main/AndroidManifest.xml) add permission on the Internet and initialize MyApp.class. Read the comments in the code
+In the [`Manifest`](https://github.com/GssGuru/Login-Simple/blob/master/app/src/main/AndroidManifest.xml) add permission on the Internet and initialize MyApp.class. Read the comments in the code
 
 ## gradle
-In the [`gradle`](https://github.com/GssGuru/Login-Beginner/blob/master/app/build.gradle) add only dependencies on the Internet, ButterKnife , Moxy(MVP) and library for work with image. Read the comments in the code
+In the [`gradle`](https://github.com/GssGuru/Login-Simple/blob/master/app/build.gradle) add only dependencies on the Internet, ButterKnife , Moxy(MVP). Read the comments in the code
 
 ## Aplication code
-[`Aplication code`](https://github.com/GssGuru/Login-Beginner/tree/master/app/src/main/java/guru/gss/loginbeginner) - is the code with the mechanics of the application.
+[`Aplication code`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple) - is the code with the mechanics of the application.
 Carefully read the code comments.
 
 To make our code more flexible we apply the MVP architectural pattern. Divide application into parts:
@@ -46,7 +46,7 @@ To make our code more flexible we apply the MVP architectural pattern. Divide ap
 - LoginActivityView.java
 
 ## Resources code
-[`Res folder.`](https://github.com/GssGuru/Login-Beginner/tree/master/app/src/main/res) Change only Application Name
+[`Res`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/res) Change only Application Name
 
 </p>
 </details>
