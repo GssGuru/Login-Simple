@@ -32,8 +32,8 @@ To make our code more flexible we apply the MVP architectural pattern. Divide ap
 - MyApp.class - root class in the application. Used for various flexible solutions and getting the context and any place of application
 
 пакет model. Divide package into parts:
-- interactors
-- repositories
+- interactors - Here we will work with entities.
+- repositories - here we work only with data. We take and place them in the database, internal storage or work with Internet requests
 
 пакет ui. Divide package into parts:
 - login
@@ -44,10 +44,6 @@ To make our code more flexible we apply the MVP architectural pattern. Divide ap
 - LoginActivity.java
 - LoginActivityPresenter.java
 - LoginActivityView.java
-
-пакет utils.  Divide package into parts:
-- utils
-- UiUtilsInteractor.java
 
 ## Resources code
 [`Res folder.`](https://github.com/GssGuru/Login-Beginner/tree/master/app/src/main/res) Change only Application Name
