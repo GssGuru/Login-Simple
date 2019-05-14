@@ -8,6 +8,10 @@ import android.widget.EditText;
 import guru.gss.loginsimple.R;
 import guru.gss.loginsimple.ui.utils.UiUtilsInteractor;
 
+/*
+ENG: Utils for work with data validation
+RU: Utils для работы с валидацией данных
+*/
 public class EmailPasswdValidation implements UiUtilsInteractor.EmailPasswdValidation {
 
     public boolean logIn(Context context, EditText mEmailView, EditText mPasswordView) {

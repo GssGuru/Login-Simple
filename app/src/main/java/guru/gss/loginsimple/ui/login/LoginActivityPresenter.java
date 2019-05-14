@@ -6,6 +6,10 @@ import com.arellomobile.mvp.MvpPresenter;
 import guru.gss.loginsimple.model.interactors.Interactor;
 import guru.gss.loginsimple.model.interactors.user.UserAuthorizationListener;
 
+/*
+ENG: Presenter for View in which we store all dynamic data and working with the entitie Interactors
+RU: Presenter для View в котором мы храним все динамические данные и работаем с Interactors сущности
+*/
 @InjectViewState
 public class LoginActivityPresenter extends MvpPresenter<LoginActivityView> {
 

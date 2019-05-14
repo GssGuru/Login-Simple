@@ -2,6 +2,10 @@ package guru.gss.loginsimple.model.repositories.preference;
 
 import android.content.SharedPreferences;
 
+/*
+ENG: Repository for work with Preference
+RU: Repository для работи с Preference
+*/
 public interface PreferenceRepository {
 
     /**

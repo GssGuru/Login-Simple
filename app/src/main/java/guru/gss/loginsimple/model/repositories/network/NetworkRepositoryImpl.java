@@ -6,6 +6,10 @@ import okhttp3.Response;
 import retrofit2.Call;
 import retrofit2.Callback;
 
+/*
+ENG: Repository for work with internet request
+RU: Repository для работи с Интернет запросами
+*/
 public class NetworkRepositoryImpl implements NetworkRepository {
 
     @Override

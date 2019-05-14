@@ -6,6 +6,10 @@ import android.preference.PreferenceManager;
 
 import guru.gss.loginsimple.MyApp;
 
+/*
+ENG: Repository for work with Preference
+RU: Repository для работи с Preference
+*/
 public class PreferenceRepositoryImpl implements PreferenceRepository {
 
     public static final String IS_USER_EXIST = "is_user_exist";

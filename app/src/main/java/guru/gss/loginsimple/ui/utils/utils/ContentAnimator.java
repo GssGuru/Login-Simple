@@ -6,6 +6,10 @@ import android.view.View;
 
 import guru.gss.loginsimple.ui.utils.UiUtilsInteractor;
 
+/*
+ENG: Utils for work with animation
+RU: Utils для работы с анимацией
+*/
 public class ContentAnimator implements UiUtilsInteractor.ContentAnimator {
 
     public void changeContent(final boolean show, final View mLoginFormView, final View mProgressView) {

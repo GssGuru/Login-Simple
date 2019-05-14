@@ -6,6 +6,10 @@ import guru.gss.loginsimple.model.repositories.network.NetworkRepository;
 import guru.gss.loginsimple.model.repositories.preference.PreferenceRepository;
 import guru.gss.loginsimple.model.repositories.preference.PreferenceRepositoryImpl;
 
+/*
+ENG: Interactor for entitie User
+RU: Интерактор для сущности User
+*/
 public class UserInteractor implements Interactor.InteractorUser {
 
     private NetworkRepository networkRepository;

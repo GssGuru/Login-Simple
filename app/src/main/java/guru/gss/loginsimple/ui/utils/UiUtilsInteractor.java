@@ -4,6 +4,10 @@ import android.content.Context;
 import android.view.View;
 import android.widget.EditText;
 
+/*
+ENG: Interactor for work with Utils
+RU: Interactor для работи с Utils
+*/
 public interface UiUtilsInteractor {
 
     interface ContentAnimator{
