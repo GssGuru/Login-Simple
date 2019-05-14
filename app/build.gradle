@@ -12,19 +12,35 @@ android {
 }
 
 dependencies {
+    /*
+    ENG: dependencies for work with base elements
+    RU: зависимости для работы с базовыми элементами
+    */
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
 
+    /*
+    ENG: dependencies for the internet request
+    RU: зависимости для интернет-запроса
+    */
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
 
+    /*
+    ENG: dependencies for moxy(MVP)
+    RU: зависимости для moxy(MVP)
+    */
     implementation 'com.arello-mobile:moxy:1.5.3'
     implementation 'com.arello-mobile:moxy-android:1.5.3'
     implementation 'com.arello-mobile:moxy-app-compat:1.5.3'
     annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3'
 
+    /*
+    ENG: dependencies for butterknife
+    RU: зависимости для butterknife
+    */
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
