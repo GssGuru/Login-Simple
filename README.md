@@ -35,7 +35,7 @@ Package [`model`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/ma
 - [`interactors`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple/model/interactors) - Here we will work with entities.
 - [`repositories`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple/model/repositories) - here we work only with data. We take and place them in the database, internal storage or work with Internet requests
 
-Package [`https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple/ui`](ile). Divide package into parts:
+Package [`ui`][`https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple/ui`](ile). Divide package into parts:
 - [`login`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple/ui/login) - This package is called in accordance with the activation and in it are all the components necessary for the operation of this activit
 - [`utils`](https://github.com/GssGuru/Login-Simple/tree/master/app/src/main/java/guru/gss/loginsimple/ui/utils) - our utilities that only work with UI elements
 - [`BaseActivity.java`](https://github.com/GssGuru/Login-Simple/blob/master/app/src/main/java/guru/gss/loginsimple/ui/BaseActivity.java) - Activity from which we extends all our Activity. It is good to keep the methods involved in different Activity
